@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IsInfamous — Mythic+ Guild</title>
+  <meta name="description" content="IsInfamous is a high-skill World of Warcraft guild on Tarren Mill EU focused on Mythic+ pushing and building a raid core." />
+  <meta property="og:title" content="IsInfamous — Mythic+ Guild" />
+  <meta property="og:description" content="High-skill M+ guild on Tarren Mill EU. Pushing keys, building a raid core, recruiting active players." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://api.fontshare.com" />
+  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&f[]=zodiak@400,700&display=swap" rel="stylesheet">
+  <style>
+    :root,[data-theme="light"] {
+      --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+      --text-sm: clamp(0.875rem, 0.8rem + 0.35vw, 1rem);
+      --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+      --text-lg: clamp(1.125rem, 1rem + 0.75vw, 1.5rem);
+      --text-xl: clamp(1.5rem, 1.2rem + 1.25vw, 2.25rem);
+      --text-2xl: clamp(2rem, 1.2rem + 2.5vw, 3.5rem);
+      --space-1: .25rem; --space-2: .5rem; --space-3: .75rem; --space-4: 1rem; --space-5: 1.25rem; --space-6: 1.5rem; --space-8: 2rem; --space-10: 2.5rem; --space-12: 3rem; --space-16: 4rem; --space-20: 5rem; --space-24: 6rem;
+      --color-bg: #0d1118;
+      --color-surface: #131a24;
+      --color-surface-2: #182131;
+      --color-surface-offset: #1d2940;
+      --color-border: rgba(186, 205, 255, 0.14);
+      --color-text: #edf3ff;
+      --color-text-muted: #aebcd9;
+      --color-text-faint: #7990bc;
+      --color-primary: #62a7ff;
+      --color-primary-hover: #8abaff;
+      --color-accent: #97d5ff;
+      --color-gold: #f0cd75;
+      --radius-sm: .375rem; --radius-md: .75rem; --radius-lg: 1.25rem; --radius-xl: 1.75rem; --radius-full: 9999px;
+      --shadow-sm: 0 8px 22px rgba(0,0,0,.18);
+      --shadow-lg: 0 24px 80px rgba(0,0,0,.35);
+      --font-body: 'General Sans', Inter, sans-serif;
+      --font-display: 'Zodiak', Georgia, serif;
+      --content: 1180px;
+    }
+    [data-theme="light"] {
+      --color-bg: #f3f6fb;
+      --color-surface: #ffffff;
+      --color-surface-2: #edf3fb;
+      --color-surface-offset: #e3ecfa;
+      --color-border: rgba(21, 42, 77, 0.12);
+      --color-text: #162036;
+      --color-text-muted: #4d6288;
+      --color-text-faint: #7588aa;
+      --color-primary: #165dcb;
+      --color-primary-hover: #0d4cad;
+      --color-accent: #2b8be6;
+      --shadow-sm: 0 10px 26px rgba(23, 52, 100, 0.08);
+      --shadow-lg: 0 28px 80px rgba(23, 52, 100, 0.12);
+    }
+    *,:before,:after{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:var(--font-body);font-size:var(--text-base);line-height:1.6;background:
+      radial-gradient(circle at top right, rgba(98,167,255,.14), transparent 22%),
+      radial-gradient(circle at left 20%, rgba(151,213,255,.08), transparent 20%),
+      var(--color-bg); color:var(--color-text)}
+    img,svg{display:block;max-width:100%}
+    a{color:inherit;text-decoration:none}
+    button{font:inherit}
+    .container{width:min(calc(100% - 2rem), var(--content));margin:auto}
+    .skip{position:absolute;left:-999px;top:auto}.skip:focus{left:1rem;top:1rem;background:var(--color-primary);color:white;padding:.75rem 1rem;border-radius:var(--radius-md);z-index:99}
+    .header{position:sticky;top:0;z-index:20;background:rgba(13,17,24,.75);backdrop-filter:blur(14px);border-bottom:1px solid var(--color-border)}
+    [data-theme="light"] .header{background:rgba(243,246,251,.75)}
+    .header-inner{display:flex;align-items:center;justify-content:space-between;gap:var(--space-4);padding:.9rem 0}
+    .brand{display:flex;align-items:center;gap:.85rem;font-weight:700}
+    .brand-mark{width:2.4rem;height:2.4rem;color:var(--color-primary)}
+    .brand-text{display:flex;flex-direction:column;line-height:1}.brand-text small{font-size:var(--text-xs);color:var(--color-text-faint);font-weight:500;margin-top:.2rem}
+    nav{display:flex;gap:var(--space-5);align-items:center;flex-wrap:wrap}
+    nav a{font-size:var(--text-sm);color:var(--color-text-muted)}
+    nav a:hover{color:var(--color-text)}
+    .theme-toggle,.btn{border:1px solid var(--color-border);background:var(--color-surface);color:var(--color-text);border-radius:var(--radius-full);padding:.8rem 1rem;min-height:44px;display:inline-flex;align-items:center;justify-content:center;gap:.6rem;cursor:pointer;transition:.2s ease}
+    .btn-primary{background:linear-gradient(135deg,var(--color-primary),var(--color-accent));color:white;border:none;box-shadow:var(--shadow-sm)}
+    .btn:hover,.theme-toggle:hover{transform:translateY(-1px);border-color:rgba(255,255,255,.22)}
+    .hero{padding:clamp(4rem,8vw,7rem) 0 var(--space-20)}
+    .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:var(--space-10);align-items:end}
+    .eyebrow{display:inline-flex;gap:.6rem;align-items:center;padding:.4rem .8rem;border-radius:var(--radius-full);background:rgba(98,167,255,.12);color:var(--color-accent);font-size:var(--text-xs);text-transform:uppercase;letter-spacing:.12em}
+    h1,h2,h3{font-family:var(--font-display);line-height:1.05;margin:0 0 .75rem}
+    h1{font-size:var(--text-2xl);max-width:11ch}
+    .hero p{max-width:60ch;color:var(--color-text-muted)}
+    .hero-actions{display:flex;gap:var(--space-4);flex-wrap:wrap;margin-top:var(--space-6)}
+    .panel{background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.01)), var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-xl);box-shadow:var(--shadow-lg)}
+    .hero-card{padding:var(--space-8);position:relative;overflow:hidden}
+    .hero-card:before{content:"";position:absolute;inset:auto -2rem -2rem auto;width:11rem;height:11rem;border-radius:50%;background:radial-gradient(circle, rgba(151,213,255,.2), transparent 68%)}
+    .score-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--space-4);margin-top:var(--space-6)}
+    .score{padding:var(--space-4);background:var(--color-surface-2);border:1px solid var(--color-border);border-radius:var(--radius-lg)}
+    .score strong{display:block;font-size:var(--text-xl);font-family:var(--font-display)}
+    .score span{font-size:var(--text-xs);color:var(--color-text-faint);text-transform:uppercase;letter-spacing:.08em}
+    section{padding:var(--space-16) 0}
+    .section-head{display:flex;justify-content:space-between;gap:var(--space-6);align-items:end;margin-bottom:var(--space-8)}
+    .section-head p{max-width:52ch;color:var(--color-text-muted);margin:0}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-5)}
+    .card{background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-lg);padding:var(--space-6)}
+    .card h3{font-size:var(--text-lg);font-family:var(--font-body);margin-bottom:.4rem}
+    .card p,.muted{color:var(--color-text-muted)}
+    .pill{display:inline-flex;padding:.35rem .7rem;border-radius:var(--radius-full);background:rgba(240,205,117,.12);color:var(--color-gold);font-size:var(--text-xs);letter-spacing:.08em;text-transform:uppercase}
+    .two-col{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-6)}
+    .rule-list{display:grid;gap:var(--space-4)}
+    .rule{padding:var(--space-5);border-radius:var(--radius-lg);background:var(--color-surface-2);border:1px solid var(--color-border)}
+    .recruit-box{padding:var(--space-8);display:grid;gap:var(--space-5)}
+    .recruit-line{font-size:var(--text-lg);color:var(--color-text)}
+    .footer{padding:var(--space-12) 0;border-top:1px solid var(--color-border);color:var(--color-text-muted)}
+    .roster{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--space-4)}
+    .roster .card{min-height:170px}
+    .badge-blue{background:rgba(98,167,255,.12);color:var(--color-accent)}
+    .cta-band{display:flex;justify-content:space-between;align-items:center;gap:var(--space-6);padding:var(--space-8);background:linear-gradient(135deg, rgba(98,167,255,.14), rgba(151,213,255,.06));border:1px solid var(--color-border);border-radius:var(--radius-xl)}
+    @media (max-width: 980px){
+      .hero-grid,.two-col,.grid-3,.roster{grid-template-columns:1fr}
+      .section-head,.cta-band,.header-inner{align-items:flex-start;flex-direction:column}
+      nav{gap:var(--space-4)}
+      h1{max-width:13ch}
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#top" class="brand" aria-label="IsInfamous home">
+        <svg class="brand-mark" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+          <path d="M32 6 50 14v18c0 12.8-7.9 20.8-18 26-10.1-5.2-18-13.2-18-26V14L32 6Z" stroke="currentColor" stroke-width="3"/>
+          <path d="M23 24h18M32 18v28" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="32" cy="24" r="10" stroke="currentColor" stroke-width="3"/>
+        </svg>
+        <span class="brand-text">IsInfamous <small>Tarren Mill EU • Mythic+</small></span>
+      </a>
+      <nav aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#focus">Focus</a>
+        <a href="#ranks">Ranks</a>
+        <a href="#rules">Rules</a>
+        <a href="#recruitment">Recruitment</a>
+      </nav>
+      <button class="theme-toggle" data-theme-toggle aria-label="Toggle theme">◐</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">High-skill guild • Midnight</span>
+          <h1>Push harder. Raid smarter. Stay infamous.</h1>
+          <p>IsInfamous is a Mythic+ driven World of Warcraft guild on Tarren Mill EU built around active players, clean execution, and a roster strong enough to grow into organized raiding.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#recruitment">Apply to join</a>
+            <a class="btn" href="#rules">View guild rules</a>
+          </div>
+        </div>
+        <aside class="panel hero-card" aria-label="Guild snapshot">
+          <span class="pill">Guild snapshot</span>
+          <div class="score-grid">
+            <div class="score"><span>Primary focus</span><strong>M+</strong></div>
+            <div class="score"><span>Next step</span><strong>Raiding</strong></div>
+            <div class="score"><span>Roster strength</span><strong>20+</strong></div>
+            <div class="score"><span>Top-end score</span><strong>3700+</strong></div>
+          </div>
+          <p class="muted" style="margin-top:1.2rem">Built for players who want a disciplined home for keys now and a serious raid core soon.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="pill badge-blue">Guild identity</span>
+            <h2>What IsInfamous stands for</h2>
+          </div>
+          <p>A strong guild site should explain the culture fast: what you do, who fits, and what standards matter. This page keeps that structure clear for recruits and members alike.</p>
+        </div>
+        <div class="grid-3">
+          <article class="card"><h3>Performance first</h3><p>We value preparation, consistency, and players who understand their class and role under pressure.</p></article>
+          <article class="card"><h3>Mythic+ core</h3><p>Keys are the center of the guild. Routing, utility, communication, and reliability matter more than ego.</p></article>
+          <article class="card"><h3>Raid ambition</h3><p>We are building from a strong M+ base into a raid environment with the same standards for attendance and execution.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="focus">
+      <div class="container two-col">
+        <article class="card">
+          <span class="pill">Current focus</span>
+          <h2>Mythic+ structure</h2>
+          <p class="muted">Organized push groups, role balance, and a culture where strong players help maintain a high standard instead of dragging runs into chaos.</p>
+          <div class="rule-list">
+            <div class="rule"><strong>Key leaders</strong><br><span class="muted">Experienced players coordinate comps, routes, and weekly targets.</span></div>
+            <div class="rule"><strong>Active roster</strong><br><span class="muted">Members are expected to stay available, communicate, and respect scheduled runs.</span></div>
+            <div class="rule"><strong>Zero drama standard</strong><br><span class="muted">Direct feedback is welcome. Blame culture is not.</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <span class="pill">Next phase</span>
+          <h2>Raid foundation</h2>
+          <p class="muted">The goal is to convert high-end dungeon discipline into a dependable raid roster with clear attendance expectations and role accountability.</p>
+          <div class="rule-list">
+            <div class="rule"><strong>Heroic into Mythic</strong><br><span class="muted">Start with a stable team, then scale toward harder progression.</span></div>
+            <div class="rule"><strong>Consumables ready</strong><br><span class="muted">Members come prepared with enchants, gems, consumables, and the right build.</span></div>
+            <div class="rule"><strong>Logs and improvement</strong><br><span class="muted">We review performance to improve, not to farm excuses.</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="ranks">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="pill">Guild ranks</span>
+            <h2>Rank structure for IsInfamous</h2>
+          </div>
+          <p>A clean rank system helps a high-end guild scale without confusion. These names fit the guild identity while staying easy to understand in practice.</p>
+        </div>
+        <div class="roster">
+          <article class="card"><h3>Overlord</h3><p>Guild master with final authority over raids, guild direction, and leadership choices.</p></article>
+          <article class="card"><h3>Warlord</h3><p>Co-leadership support for raid planning, M+ oversight, and officer coordination.</p></article>
+          <article class="card"><h3>Captains</h3><p>Officers handling recruitment, scheduling, discipline, and roster management.</p></article>
+          <article class="card"><h3>Keysmasters</h3><p>Top-end Mythic+ leaders who set the tone for keys, routes, and weekly pushes.</p></article>
+          <article class="card"><h3>Raiders</h3><p>Core players committed to raid nights, preparation, and progression standards.</p></article>
+          <article class="card"><h3>Runners</h3><p>Active M+ members and flexible raid substitutes who stay available and useful.</p></article>
+          <article class="card"><h3>Members</h3><p>Regular active players who fit the guild culture and contribute consistently.</p></article>
+          <article class="card"><h3>Initiates</h3><p>Trial players being evaluated for attitude, reliability, and performance.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="rules">
+      <div class="container two-col">
+        <article class="card">
+          <span class="pill">Guild rules</span>
+          <h2>Core rules to follow</h2>
+          <div class="rule-list">
+            <div class="rule"><strong>1. Respect the roster.</strong><br><span class="muted">No harassment, hate speech, targeted toxicity, or unnecessary drama.</span></div>
+            <div class="rule"><strong>2. Stay prepared.</strong><br><span class="muted">Know your class, bring the right setup, and enter runs ready to perform.</span></div>
+            <div class="rule"><strong>3. Communicate early.</strong><br><span class="muted">If you miss a key or raid, give notice instead of wasting other people’s time.</span></div>
+            <div class="rule"><strong>4. Accept accountability.</strong><br><span class="muted">Mistakes happen. Own them, learn from them, and move on without excuses.</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <span class="pill">Standards</span>
+          <h2>What members are expected to do</h2>
+          <div class="rule-list">
+            <div class="rule"><strong>5. Protect guild resources.</strong><br><span class="muted">Use guild bank materials, consumables, and repairs responsibly.</span></div>
+            <div class="rule"><strong>6. Follow event leadership.</strong><br><span class="muted">During keys and raids, callouts from leaders take priority over ego plays.</span></div>
+            <div class="rule"><strong>7. Stay active.</strong><br><span class="muted">We are building around players who are consistently present in game and on Discord.</span></div>
+            <div class="rule"><strong>8. Earn your rank.</strong><br><span class="muted">Promotions are based on trust, activity, and performance rather than time alone.</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="recruitment">
+      <div class="container">
+        <div class="panel recruit-box">
+          <div class="section-head" style="margin-bottom:0">
+            <div>
+              <span class="pill badge-blue">Recruitment</span>
+              <h2>Join the roster</h2>
+            </div>
+            <p>We are recruiting skilled, active players who want a real M+ home and who are ready to help build a raid team with the same level of discipline.</p>
+          </div>
+          <p class="recruit-line"><strong>&lt;IsInfamous&gt;</strong> — Tarren Mill EU. High-skill M+ guild with a strong 3700+ core, now building into raiding. Looking for active players with clean attitude, class knowledge, Discord use, and no drama.</p>
+          <div class="cta-band">
+            <div>
+              <h3 style="margin:0 0 .35rem;font-family:var(--font-body);font-size:var(--text-lg)">Best fit</h3>
+              <p class="muted" style="margin:0">Healers, tanks, and reliable DPS who want regular keys, stable structure, and real progression.</p>
+            </div>
+            <a class="btn btn-primary" href="https://raider.io" target="_blank" rel="noopener noreferrer">Add your application path</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>IsInfamous — built as a clean guild hub for recruitment, rules, and identity. Replace the application button with your Discord invite or contact method before publishing.</p>
+    </div>
+  </footer>
+
+  <script>
+    (function(){
+      const t=document.querySelector('[data-theme-toggle]');
+      const r=document.documentElement;
+      let d=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';
+      r.setAttribute('data-theme', d);
+      const icons={dark:'☀',light:'☾'};
+      const sync=()=>{t.textContent=d==='dark'?icons.dark:icons.light;t.setAttribute('aria-label','Switch to '+(d==='dark'?'light':'dark')+' mode');};
+      sync();
+      t.addEventListener('click',()=>{d=d==='dark'?'light':'dark';r.setAttribute('data-theme',d);sync();});
+    })();
+  </script>
+</body>
+</html>
